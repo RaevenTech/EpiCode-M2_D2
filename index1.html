@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles.css">
 
     <title>Music for life</title>
@@ -21,13 +22,7 @@
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg/docs/4.6/assets/brand/bootstrap-solid.svg"
-                width="30" height="30" alt="">
 
-        </a>
-    </nav>
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
             In this section you should have:
@@ -35,15 +30,17 @@
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
-    <h1> My music </h1>
+    <h1 class="page-title"> My music page </h1>
 
-    <div class="jumbotron-container">
+    <div>
         <div class="jumbotron">
             <h1 class="display-4">MY Music</h1>
             <p class="lead"> Music is life</p>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <p><strong>This is my current listening choice</strong></p>
+            <img class="jumbo-backgroun-image"
+                src="https://images.kerrangcdn.com/images/LinkinParkAlbumCovers.jpg?auto=compress&fit=max&w=1200">
+            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>-->
         </div>
     </div>
 
@@ -51,70 +48,65 @@
         <div class="row my-3">
             <div class="col-sm-6 col-md-4 col-xl-3">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Linkin_Park_Hybrid_Theory_Album_Cover.jpg"
+                        class="card-img-top" alt="Hybrid theory album cover">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Hybrid Theory</h5>
+                        <p class="card-text">Genre: alternative Rock
+                            Released:October 24,
+                            2000</p>
+                        <a href="https://en.wikipedia.org/wiki/Hybrid_Theory" class="btn btn-primary">Album Bio</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4 col-xl-3">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Linkin_Park_Meteora_Album_Cover.jpg/220px-Linkin_Park_Meteora_Album_Cover.jpg"
+                        class="card-img-top" alt="Meteora ablum cover">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">Genre:Rock
+                            Released:March 25 2003,</p>
+                        <a href="https://en.wikipedia.org/wiki/Meteora_(album)" class="btn btn-primary">Album Bio</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4 col-xl-3">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Minutes_to_Midnight_cover.jpg"
+                        class="card-img-top" alt="Minutes to Midnight">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Minutes to Midnight</h5>
+                        <p class="card-text">Genre:Rock Released: May 25, 2007
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Minutes_to_Midnight_(Linkin_Park_album)"
+                            class="btn btn-primary">Album Bio</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4 col-xl-3">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/af/A_Thousand_Suns_Cover2.jpg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">A Thousand Suns</h5>
+                        <p class="card-text">Genre:Rock Released: September 14, 2010</p>
+                        <a href="#" class="btn btn-primary">Album Bio</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4 col-xl-3">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/27/War_is_the_Answer_Album_Art.JPG"
+                        class="card-img-top" alt="war is the answer">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">War is the answer</h5>
+                        <p class="card-text">Genre:Rock Released: September 14, 2010</p>
+                        <a href="#" class="btn btn-primary">Album Bio</a>
                     </div>
                 </div>
             </div>
@@ -122,14 +114,12 @@
 
             <div class="col-sm-6 col-md-4 col-xl-3">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Bad_Wolves_-_Nation.png"
+                        class="card-img-top" alt="ALBUM COVER">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">N.A.T.I.O.N</h5>
+                        <p class="card-text">Genre:Rock Released: September 14, 2010</p>
+                        <a href="https://en.wikipedia.org/wiki/N.A.T.I.O.N." class="btn btn-primary">Album Bio</a>
                     </div>
                 </div>
             </div>
@@ -137,28 +127,25 @@
 
             <div class="col-sm-6 col-md-4 col-xl-3">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/Metallica_-_Metallica_cover.jpg"
+                        class="card-img-top" alt=Album cover">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Metallica</h5>
+                        <p class="card-text">Genre:Rock Released: September 14, 2010</p>
+                        <a href="https://metallica.com/releases/singles-eps/4293/enter-sandman"
+                            class="btn btn-primary">Album Bio</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4 col-xl-3">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/df/FFDPGotYourSix.png" class="card-img-top"
+                        alt="album cover...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Got Your Six</h5>
+                        <p class="card-text">Genre:HardRock Released: 2015</p>
+                        <a href="https://en.wikipedia.org/wiki/Got_Your_Six" class="btn btn-primary">Album Bio</a>
                     </div>
                 </div>
             </div>
@@ -197,9 +184,11 @@
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
         -->
-    <div>Wall Of Shame</div>
+    <div>
+        <h2>Wall Of Shame</h2>
+    </div>
+
     <ol>
-        <li>Island Boys</li>
         <li>Island Boys</li>
         <li>Island Boys</li>
         <li>Island Boys</li>
@@ -210,9 +199,9 @@
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
         -->
-    <article>
-        <div><a href="https://en.wikipedia.org/wiki/Chester_Bennington"></a></div>
-    </article>
+    <section>
+        <div><a class="tribute" href="https://en.wikipedia.org/wiki/Chester_Bennington"> Chester Bennington</a></div>
+    </section>
 
     <!-- EXERCISE 7
             Just covers!
@@ -226,13 +215,8 @@
     <div>
         <footer>
             <a href="https://en.wikipedia.org/wiki/Linkin_Park"> LINKIN PARK</a>
-
         </footer>
     </div>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -240,8 +224,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
