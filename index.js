@@ -7,6 +7,7 @@ MANDATORY JS EXERCISES (create a different file for this exercise)
     5) Append the list items in the unordered list
     6) Append the unordered list in the document. The list should appear in the page.
 */
+
 let genres = ["Comedy", "Drama", "Romance", "Horror", "Sci-Fi", "Documentary"]
 
 function myFunction() {
