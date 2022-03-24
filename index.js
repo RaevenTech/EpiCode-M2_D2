@@ -13,7 +13,7 @@ let genres = ["Comedy", "Drama", "Romance", "Horror", "Sci-Fi", "Documentary"]
 
 
 function unorderedList() {
-    let newUnorderedList = document.createElement("ul");
+    let bandMembers = document.createElement("ul");
 }
 
 //3) Cycle the array and create a list-item via JavaScript for every element
@@ -34,6 +34,7 @@ for (let i = 0; i < genres.length; i++) {
 
 //     3) Grab the inputs references via DOM manipulation and save them in variables
 //     4) Create a function and attach it to the "Apply Colors" button click event
+function
 //     5) Cycle listItems inside the function. Verify that the function and the loop work by logging in the console 
 //         each item from the loop every time the button gets clicked
 //     6) Move the inputs references in the function. Use the first input value as background-color for the item, and the second one for the text color.

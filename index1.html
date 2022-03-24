@@ -22,6 +22,30 @@
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Albums</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Favourite</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chester</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"href="#bio">Bio</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
@@ -30,14 +54,16 @@
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
-    <h1 class="page-title"> My music page </h1>
+  
 
     <div>
         <div class="jumbotron">
-            <h1 class="display-4">MY Music</h1>
-            <p class="lead"> Music is life</p>
-            <hr class="my-4">
+            <div class="container">
+             <h1 class="display-4">MY Music</h1>
+             <p class="lead"> Music is life</p>
+             <hr class="my-4" style="border:1px solid">
             <p><strong>This is my current listening choice</strong></p>
+        </div>
 
             <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>-->
         </div>
@@ -211,9 +237,9 @@
     <!-- EXERCISE 8
             Implement a footer with some information / social links.
         -->
-    <div>
+    <div class="container">
         <footer>
-            <a href="https://en.wikipedia.org/wiki/Linkin_Park"> LINKIN PARK</a>
+            <a id="bio" href="https://en.wikipedia.org/wiki/Linkin_Park"> LINKIN PARK</a>
         </footer>
     </div>
 
@@ -223,6 +249,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
